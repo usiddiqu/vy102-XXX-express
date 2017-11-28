@@ -31,10 +31,10 @@ app.use(bodyParser.urlencoded({
 var index = require('./routes'),
     author = require('./routes/author');
 	
-//In case the caller access any resource under the root /, call index route
+//In case the caller accesses any resource under the root /, call index route
 app.use('/', index);
 
-//In case the caller access any resource under /author, call author route
+//In case the caller accesses any resource under /author, call author route
 app.use('/author', author);
 
 // start server on the specified port and binding host
